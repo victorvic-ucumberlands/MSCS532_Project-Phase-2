@@ -252,16 +252,7 @@ class FlightGraph:
 #Weight: accumulated cost/time/connections to reach this node from the origin
 #Path: list of IATA codes representing the path taken to reach this node, assume only one path connects two nodes directly
 
-class Node:
-    """
-    Node for the linked list in the hash table chaining.
-    Stores the airport code, accumulated weight, path taken, and a pointer to the next node.
-    """
-    def __init__(self, code: str, weight: float, path: list[str]):
-        self.code = code
-        self.weight = weight
-        self.path = path
-        self.next = None
+
 
 
 class MinHeap:
